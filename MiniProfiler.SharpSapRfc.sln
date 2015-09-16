@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.SharpSapRfc", "src\MiniProfiler.SharpSapRfc.csproj", "{DAC65E9A-FAFC-4E95-B35D-C9F4162ACB24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{46DF4F65-A5B6-49E6-8C31-6F7572586C52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Mvc", "samples\Sample.Mvc\Sample.Mvc.csproj", "{4F8806D9-C138-4C98-B45B-DFD62A092316}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAC65E9A-FAFC-4E95-B35D-C9F4162ACB24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC65E9A-FAFC-4E95-B35D-C9F4162ACB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC65E9A-FAFC-4E95-B35D-C9F4162ACB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC65E9A-FAFC-4E95-B35D-C9F4162ACB24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F8806D9-C138-4C98-B45B-DFD62A092316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F8806D9-C138-4C98-B45B-DFD62A092316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F8806D9-C138-4C98-B45B-DFD62A092316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F8806D9-C138-4C98-B45B-DFD62A092316}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4F8806D9-C138-4C98-B45B-DFD62A092316} = {46DF4F65-A5B6-49E6-8C31-6F7572586C52}
+	EndGlobalSection
+EndGlobal

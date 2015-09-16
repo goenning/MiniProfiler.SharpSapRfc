@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Customer>
+
+<h1>Customer List</h1>
+
+<ol>
+    @foreach (var cust in this.Model)
+    { 
+        <li><a href="@Url.Action("ShowCustomer", "Home", new { id = cust.Id})">@cust.Name (Active: @cust.IsActive)</a></li>
+    }
+</ol>
