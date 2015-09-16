@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>MiniProfiler.SharpSapRfc</id>
+    <version>1.0.0</version>
+    <authors>Guilherme Oenning</authors>
+    <owners>Guilherme Oenning</owners>
+    <licenseUrl>https://github.com/goenning/MiniProfiler.SharpSapRfc/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/goenning/MiniProfiler.SharpSapRfc</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MiniProfiler Provider for SharpSapRfc</description>
+    <tags>profiler sap rfc</tags>
+    <dependencies>
+      <dependency id="SharpSapRfc" version="2.0.5" />
+      <dependency id="MiniProfiler" version="3.2.0.157" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="src\bin\Release\MiniProfiler.SharpSapRfc.dll" target="lib\net40" />
+  </files>
+</package>
