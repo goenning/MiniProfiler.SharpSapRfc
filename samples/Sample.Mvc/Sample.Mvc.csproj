@@ -155,12 +155,6 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\MiniProfiler.SharpSapRfc.csproj">
-      <Project>{dac65e9a-fafc-4e95-b35d-c9f4162acb24}</Project>
-      <Name>MiniProfiler.SharpSapRfc</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -177,6 +171,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MiniProfiler.SharpSapRfc.csproj">
+      <Project>{dac65e9a-fafc-4e95-b35d-c9f4162acb24}</Project>
+      <Name>MiniProfiler.SharpSapRfc</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

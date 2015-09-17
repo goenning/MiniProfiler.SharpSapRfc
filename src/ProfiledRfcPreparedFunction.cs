@@ -41,8 +41,8 @@ namespace SharpSapRfc.Profiling
                 }
                 formattedCommand = string.Concat(Environment.NewLine, "- ", string.Join(string.Concat(Environment.NewLine, "- "), parameterList));
             }
-            
-            return string.Format("Function: {0}{1}Parameters:{2}", this.FunctionName, Environment.NewLine, formattedCommand)
+
+            return string.Format("Function: {0}{1}Parameters:{2}", this.FunctionName, Environment.NewLine, formattedCommand);
         }
     }
 }
