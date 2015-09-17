@@ -24,7 +24,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -40,8 +40,9 @@
       <HintPath>..\packages\MiniProfiler.3.2.0.157\lib\net40\MiniProfiler.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SharpSapRfc">
-      <HintPath>..\..\SharpSapRfc\src\base\bin\Release\SharpSapRfc.dll</HintPath>
+    <Reference Include="SharpSapRfc, Version=2.0.5.0, Culture=neutral, PublicKeyToken=3a74d6eebd98cdfe, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpSapRfc.2.0.5\lib\net40\SharpSapRfc.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>

@@ -18,7 +18,15 @@ namespace SharpSapRfc.Profiling
         
         public override RfcResult Execute()
         {
-            string formattedParameters = " Empty";
+            using (this.profiler.CustomTiming("sap", this.GetFormattedCommand()))
+            {
+                return this.prepared.Execute();
+            }
+        }
+
+        private string GetFormattedCommand()
+        {
+            string formattedCommand = " Empty";
 
             if (this.Parameters.Any())
             {
@@ -27,17 +35,14 @@ namespace SharpSapRfc.Profiling
                 {
                     var parameter = this.Parameters.ElementAt(i);
                     this.prepared.AddParameter(parameter);
-                    parameterList[i] = parameter.ToString().Replace("[ {", String.Concat("[",Environment.NewLine, "   {"))
+                    parameterList[i] = parameter.ToString().Replace("[ {", String.Concat("[", Environment.NewLine, "   {"))
                                                            .Replace("}, {", String.Concat("}, ", Environment.NewLine, "   {"))
                                                            .Replace("} ]", String.Concat("}", Environment.NewLine, "  ]"));
                 }
-                formattedParameters = string.Concat(Environment.NewLine, "- ", string.Join(string.Concat(Environment.NewLine, "- "), parameterList));
+                formattedCommand = string.Concat(Environment.NewLine, "- ", string.Join(string.Concat(Environment.NewLine, "- "), parameterList));
             }
-
-            using (this.profiler.CustomTiming("sap", string.Format("Function: {0}{1}Parameters:{2}", this.FunctionName, Environment.NewLine, formattedParameters)))
-            {
-                return this.prepared.Execute();
-            }
+            
+            return string.Format("Function: {0}{1}Parameters:{2}", this.FunctionName, Environment.NewLine, formattedCommand)
         }
     }
 }
