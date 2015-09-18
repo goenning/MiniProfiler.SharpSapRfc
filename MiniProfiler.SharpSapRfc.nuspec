@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MiniProfiler.SharpSapRfc</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <authors>goenning</authors>
     <owners>goenning</owners>
     <licenseUrl>https://github.com/goenning/MiniProfiler.SharpSapRfc/blob/master/LICENSE</licenseUrl>
@@ -12,7 +12,7 @@
     <tags>profiler sap rfc</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.0">
-        <dependency id="SharpSapRfc" version="2.0.5" />
+        <dependency id="SharpSapRfc" version="2.0.8" />
         <dependency id="MiniProfiler" version="3.2.0.157" />
       </group>
     </dependencies>
